@@ -35,16 +35,6 @@ Nama video yang website sedang guna:
 ```text
 public\videos\Satria14.mp4
 public\videos\Suramala.mp4
-public\videos\M.nasir Concert- cinematic.mp4
-public\videos\Merdeka-Cinematic.mp4
-public\videos\Celcom-ADS.mp4
-public\videos\AG-Sesame Dressing-ADS.mp4
-public\videos\Grab01-ADS.mp4
-public\videos\Grab02-ADS.mp4
-public\videos\GX-01.mp4
-public\videos\GX-02.mp4
-public\videos\GX-03.mp4
-public\videos\YES-MV.mp4
 ```
 
 Dalam code React, video dalam folder `public/videos` dipanggil begini:

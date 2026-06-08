@@ -31,86 +31,6 @@ const videos = [
     poster: '/posters/Suramala.jpg',
     prompt: 'Contoh visual cinematic gelap, dramatik, dan beremosi dari workflow AI.',
   },
-  {
-    title: 'M. Nasir Concert',
-    category: 'Cinematic',
-    length: '2:56',
-    src: '/videos/M.nasir Concert- cinematic.mp4',
-    poster: '/posters/M.nasir Concert- cinematic.jpg',
-    prompt: 'Concert cinematic treatment dengan mood stage, crowd, dan performance.',
-  },
-  {
-    title: 'Merdeka',
-    category: 'Cinematic',
-    length: '1:01',
-    src: '/videos/Merdeka-Cinematic.mp4',
-    poster: '/posters/Merdeka-Cinematic.jpg',
-    prompt: 'Cinematic nasional dengan visual storytelling dan emotional build-up.',
-  },
-  {
-    title: 'Celcom',
-    category: 'Ads',
-    length: '0:46',
-    src: '/videos/Celcom-ADS.mp4',
-    poster: '/posters/Celcom-ADS.jpg',
-    prompt: 'Commercial style AI video untuk brand telco dengan pacing iklan.',
-  },
-  {
-    title: 'AG Sesame Dressing',
-    category: 'Ads',
-    length: '0:15',
-    src: '/videos/AG-Sesame Dressing-ADS.mp4',
-    poster: '/posters/AG-Sesame Dressing-ADS.jpg',
-    prompt: 'Food product ad dengan framing clean, appetizing shot, dan pacing pendek.',
-  },
-  {
-    title: 'Grab01',
-    category: 'Ads',
-    length: '0:52',
-    src: '/videos/Grab01-ADS.mp4',
-    poster: '/posters/Grab01-ADS.jpg',
-    prompt: 'Ads concept untuk service brand dengan scenario dan visual sequence.',
-  },
-  {
-    title: 'Grab02',
-    category: 'Ads',
-    length: '0:18',
-    src: '/videos/Grab02-ADS.mp4',
-    poster: '/posters/Grab02-ADS.jpg',
-    prompt: 'Short ad variation dengan message ringkas dan visual yang cepat faham.',
-  },
-  {
-    title: 'GX-01',
-    category: 'Ads',
-    length: '0:50',
-    src: '/videos/GX-01.mp4',
-    poster: '/posters/GX-01.jpg',
-    prompt: 'Product ad concept dengan visual AI, camera flow, dan hook pendek.',
-  },
-  {
-    title: 'GX-02',
-    category: 'Ads',
-    length: '0:47',
-    src: '/videos/GX-02.mp4',
-    poster: '/posters/GX-02.jpg',
-    prompt: 'Variation iklan GX dengan shot sequence dan visual direction berbeza.',
-  },
-  {
-    title: 'GX-03',
-    category: 'Ads',
-    length: '1:00',
-    src: '/videos/GX-03.mp4',
-    poster: '/posters/GX-03.jpg',
-    prompt: 'Fuller ad cut untuk tunjuk cara AI boleh bina multiple creative angles.',
-  },
-  {
-    title: 'YES-MV',
-    category: 'MV',
-    length: '0:30',
-    src: '/videos/YES-MV.mp4',
-    poster: '/posters/YES-MV.jpg',
-    prompt: 'Music video style: mood, rhythm, cinematic frame, dan visual identity.',
-  },
 ];
 
 const outcomes = [
@@ -124,7 +44,7 @@ const outcomes = [
 
 const stats = [
   ['20 Jun', 'kelas online'],
-  ['12 video', 'galeri demo'],
+  ['2 video', 'galeri demo'],
   ['2 jam', 'kelas live'],
 ];
 
