@@ -1,0 +1,650 @@
+:root {
+  color: #f5f5f5;
+  background: #050505;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #050505;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.hero {
+  min-height: 92vh;
+  padding: 24px clamp(18px, 4vw, 56px) 64px;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.97) 0%, rgba(0, 0, 0, 0.82) 42%, rgba(0, 0, 0, 0.38) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.1), #050505 98%),
+    url("/images/cinematic-montage.png")
+      center/cover;
+  color: #ffffff;
+}
+
+.topbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.brand,
+.topbar nav,
+.eyebrow,
+.primaryBtn,
+.secondaryBtn,
+.meta,
+.showreelInfo span,
+.rating,
+footer span {
+  align-items: center;
+  display: flex;
+}
+
+.brand {
+  font-weight: 800;
+  gap: 12px;
+}
+
+.brandLogo {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  height: 42px;
+  object-fit: contain;
+  padding: 6px;
+  width: 42px;
+}
+
+.topbar nav {
+  gap: clamp(14px, 3vw, 30px);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.94rem;
+}
+
+.topbar nav a:hover {
+  color: #ffffff;
+}
+
+.heroGrid {
+  align-items: end;
+  display: grid;
+  gap: clamp(30px, 5vw, 68px);
+  grid-template-columns: minmax(0, 0.96fr) minmax(320px, 0.84fr);
+  margin: clamp(58px, 10vh, 108px) auto 0;
+  max-width: 1180px;
+}
+
+.heroCopy {
+  max-width: 720px;
+}
+
+.heroLogo {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  height: 96px;
+  margin-bottom: 26px;
+  object-fit: contain;
+  padding: 14px;
+  width: 96px;
+}
+
+.eyebrow {
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  gap: 9px;
+  margin-bottom: 22px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(3rem, 7vw, 6.8rem);
+  letter-spacing: 0;
+  line-height: 0.93;
+  max-width: 860px;
+}
+
+.heroCopy p {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.75;
+  margin-top: 24px;
+  max-width: 640px;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.primaryBtn,
+.secondaryBtn,
+.videoCard button {
+  border-radius: 8px;
+  font-weight: 800;
+  gap: 9px;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+}
+
+.primaryBtn {
+  background: #ffffff;
+  color: #050505;
+}
+
+.secondaryBtn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: #ffffff;
+}
+
+.stats {
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 42px;
+  max-width: 600px;
+  padding-top: 24px;
+}
+
+.stat strong {
+  color: #ffffff;
+  display: block;
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+}
+
+.stat span {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.9rem;
+}
+
+.showreel {
+  background: rgba(10, 10, 10, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 26px 80px rgba(0, 0, 0, 0.32);
+  overflow: hidden;
+}
+
+.showreel video {
+  aspect-ratio: 16 / 10;
+  background: #000000;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.showreelInfo {
+  padding: 18px;
+}
+
+.showreelInfo span {
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.showreelInfo strong {
+  display: block;
+  font-size: 1.25rem;
+  margin-top: 8px;
+}
+
+.galleryBand,
+.learnBand,
+.ctaBand,
+footer {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding-left: clamp(18px, 4vw, 56px);
+  padding-right: clamp(18px, 4vw, 56px);
+}
+
+.galleryBand {
+  background: #050505;
+  padding-top: 70px;
+}
+
+.sectionHead {
+  align-items: end;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.sectionKicker {
+  color: #a6a6a6;
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #f5f5f5;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.filters button {
+  background: #111111;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  color: #d7d7d7;
+  font-size: 0.9rem;
+  font-weight: 800;
+  min-height: 40px;
+  padding: 0 13px;
+}
+
+.filters button.active {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #050505;
+}
+
+.videoGrid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 28px;
+}
+
+.videoCard {
+  background: #111111;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.28);
+  overflow: hidden;
+}
+
+.posterButton {
+  aspect-ratio: 4 / 5;
+  background: #000000;
+  display: block;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.posterButton img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 260ms ease;
+  width: 100%;
+}
+
+.posterButton::after {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.52));
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.posterButton:hover img {
+  transform: scale(1.045);
+}
+
+.playBadge {
+  align-items: center;
+  background: #ffffff;
+  border-radius: 999px;
+  bottom: 14px;
+  color: #050505;
+  display: inline-flex;
+  height: 44px;
+  justify-content: center;
+  left: 14px;
+  position: absolute;
+  width: 44px;
+  z-index: 1;
+}
+
+.cardBody {
+  padding: 17px;
+}
+
+.meta {
+  color: #9a9a9a;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  font-weight: 800;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.meta span {
+  align-items: center;
+  display: inline-flex;
+  gap: 5px;
+}
+
+.videoCard h3 {
+  color: #ffffff;
+  font-size: 1.08rem;
+  line-height: 1.2;
+}
+
+.videoCard p {
+  color: #b8b8b8;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin-top: 10px;
+  min-height: 86px;
+}
+
+.videoCard button:not(.posterButton) {
+  background: #ffffff;
+  color: #050505;
+  display: inline-flex;
+  margin-top: 16px;
+  min-height: 42px;
+  padding: 0 14px;
+}
+
+.learnBand {
+  align-items: start;
+  display: grid;
+  gap: 42px;
+  grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.8fr);
+  padding-top: 86px;
+}
+
+.learnIntro p,
+.ctaCopy p {
+  color: #b8b8b8;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  margin-top: 18px;
+}
+
+.outcomes {
+  display: grid;
+  gap: 12px;
+}
+
+.outcome {
+  align-items: center;
+  background: #111111;
+  border: 1px solid #262626;
+  border-radius: 8px;
+  color: #f0f0f0;
+  display: flex;
+  font-weight: 800;
+  gap: 12px;
+  min-height: 64px;
+  padding: 16px;
+}
+
+.outcome svg {
+  color: #ffffff;
+  flex: 0 0 auto;
+}
+
+.ctaBand {
+  align-items: center;
+  display: grid;
+  gap: clamp(24px, 5vw, 56px);
+  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1fr);
+  padding-bottom: 68px;
+  padding-top: 88px;
+}
+
+.ctaVisual {
+  border: 1px solid #262626;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ctaVisual img {
+  aspect-ratio: 5 / 4;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.rating {
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 900;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.ctaCopy .primaryBtn {
+  display: inline-flex;
+  margin-top: 26px;
+}
+
+.videoModal {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.86);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: clamp(14px, 3vw, 36px);
+  position: fixed;
+  z-index: 20;
+}
+
+.modalPanel {
+  background: #0b0b0b;
+  border: 1px solid #303030;
+  border-radius: 8px;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.62);
+  max-height: calc(100vh - 32px);
+  max-width: 1120px;
+  overflow: auto;
+  position: relative;
+  width: min(100%, 1120px);
+}
+
+.modalPanel video {
+  aspect-ratio: 16 / 9;
+  background: #000000;
+  max-height: 72vh;
+  object-fit: contain;
+  width: 100%;
+}
+
+.modalClose {
+  align-items: center;
+  background: #ffffff;
+  border-radius: 8px;
+  color: #050505;
+  display: inline-flex;
+  height: 42px;
+  justify-content: center;
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 42px;
+  z-index: 1;
+}
+
+.modalInfo {
+  padding: 18px 20px 20px;
+}
+
+.modalInfo span {
+  color: #a6a6a6;
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 900;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.modalInfo h3 {
+  color: #ffffff;
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+}
+
+.modalInfo p {
+  color: #b8b8b8;
+  line-height: 1.65;
+  margin-top: 8px;
+}
+
+footer {
+  align-items: center;
+  border-top: 1px solid #262626;
+  color: #a6a6a6;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  padding-top: 24px;
+}
+
+footer span {
+  color: #ffffff;
+  font-weight: 900;
+  gap: 8px;
+}
+
+footer p {
+  font-size: 0.92rem;
+  text-align: right;
+}
+
+.footerLogo {
+  background: #000000;
+  border: 1px solid #262626;
+  border-radius: 6px;
+  height: 28px;
+  object-fit: contain;
+  padding: 4px;
+  width: 28px;
+}
+
+@media (max-width: 920px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .heroGrid,
+  .learnBand,
+  .ctaBand {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionHead {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .filters {
+    justify-content: flex-start;
+  }
+
+  .videoGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .topbar {
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .topbar nav {
+    display: none;
+  }
+
+  h1 {
+    font-size: clamp(2.7rem, 15vw, 4.4rem);
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .videoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .heroActions a,
+  .filters button {
+    width: 100%;
+  }
+
+  .modalPanel {
+    max-height: calc(100vh - 20px);
+  }
+
+  .modalClose {
+    height: 38px;
+    right: 10px;
+    top: 10px;
+    width: 38px;
+  }
+
+  footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  footer p {
+    text-align: left;
+  }
+}
