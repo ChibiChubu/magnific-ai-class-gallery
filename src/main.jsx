@@ -31,8 +31,31 @@ const videos = [
     poster: '/posters/Suramala.jpg',
     prompt: 'Contoh visual cinematic gelap, dramatik, dan beremosi dari workflow AI.',
   },
+  {
+    title: 'Red Ops',
+    category: 'Cinematic',
+    length: '3:00',
+    src: '/videos/Red Ops.mp4',
+    poster: '/posters/Red-Ops.jpg',
+    prompt: 'Visual action cinematic dengan workflow AI filmmaking.',
+  },
+  {
+    title: 'Mega-transform',
+    category: 'Cinematic',
+    length: '3:00',
+    src: '/videos/Mega-transform.mp4',
+    poster: '/posters/Mega-transform.jpg',
+    prompt: 'Transformation cinematic sequence menggunakan AI workflow.',
+  },
+  {
+    title: 'Unreal-Engine-Test',
+    category: 'Cinematic',
+    length: '3:00',
+    src: '/videos/Unreal-Engine-Test.mp4',
+    poster: '/posters/Unreal-Engine-Test.jpg',
+    prompt: 'Environment dan cinematic test menggunakan Unreal Engine.',
+  },
 ];
-
 const outcomes = [
   'Prompt image dengan struktur yang betul',
   'Cara guna platform Magnific AI dari upload sampai export',
